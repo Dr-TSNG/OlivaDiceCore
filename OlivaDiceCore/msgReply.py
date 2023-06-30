@@ -2992,7 +2992,7 @@ def unity_reply(plugin_event, Proc):
                 tmp_switch_setcoc = None
                 if tmp_reast_str.isdecimal():
                     tmp_switch_setcoc = int(tmp_reast_str)
-                    if tmp_switch_setcoc not in [0, 1, 2, 3, 4, 5, 6]:
+                    if tmp_switch_setcoc not in [0, 1, 2, 3, 4, 5, 6, 7]:
                         tmp_switch_setcoc = None
                 if tmp_switch_setcoc != None:
                     tmp_templateName = 'COC7'
@@ -3001,6 +3001,8 @@ def unity_reply(plugin_event, Proc):
                         tmp_templateRuleName = 'C%s' % str(tmp_switch_setcoc)
                     elif tmp_switch_setcoc == 6:
                         tmp_templateRuleName = 'DeltaGreen'
+                    elif tmp_switch_setcoc == 7:
+                        tmp_templateRuleName = "CG"
                     OlivaDiceCore.userConfig.setUserConfigByKey(
                         userConfigKey = 'groupTemplate',
                         userConfigValue = tmp_templateName,
