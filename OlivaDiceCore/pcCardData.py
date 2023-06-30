@@ -990,6 +990,28 @@ dictPcCardTemplateDefaultTemp = {
                         }
                     ]
                 }
+            },
+            'CG': {
+                'greatSuccess': {
+                    '.and': [
+                        {
+                            '.>=': ['$roll', 1]
+                        },
+                        {
+                            '.<=': ['$roll', 3]
+                        }
+                    ]
+                },
+                'greatFail': {
+                    '.and': [
+                        {
+                            '.>=': ['$roll', 98],
+                        },
+                        {
+                            '.<=': ['$roll', 100]
+                        }
+                    ]
+                }
             }
         }
     },
@@ -1565,6 +1587,28 @@ dictPcCardTemplateDefaultTemp = {
                                     ]
                                 }
                             ]
+                        }
+                    ]
+                }
+            },
+            'CG': {
+                'greatSuccess': {
+                    '.and': [
+                        {
+                            '.>=': ['$roll', 1]
+                        },
+                        {
+                            '.<=': ['$roll', 3]
+                        }
+                    ]
+                },
+                'greatFail': {
+                    '.and': [
+                        {
+                            '.>=': ['$roll', 98],
+                        },
+                        {
+                            '.<=': ['$roll', 100]
                         }
                     ]
                 }
